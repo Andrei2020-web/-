@@ -26,5 +26,7 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.JSON</subsystems>
+  <catalogs>Catalog.Сотрудники</catalogs>
+  <documents>Document.ОплатаПоставщикам</documents>
   <dataProcessors>DataProcessor.ПотоковаяЗаписьНаСервере</dataProcessors>
 </mdclass:Configuration>

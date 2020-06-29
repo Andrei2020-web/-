@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="def86776-0b76-4ce8-8ced-9e1f4d672686">
+  <producedTypes>
+    <objectType typeId="9fa02360-be1a-41e9-beb1-8632bbe74403" valueTypeId="7c10bf4b-73a1-4833-85b2-3e7b6e4e97f3"/>
+    <refType typeId="2387d11d-76ab-42b1-8d91-6e9e3d990f3e" valueTypeId="f197866b-7f23-4f9d-bd94-921320b98453"/>
+    <selectionType typeId="97d23cdb-1218-4756-9058-f01ff67da7aa" valueTypeId="663bbac1-09c9-4744-8d18-b11f60c676ba"/>
+    <listType typeId="7a4816dc-f216-463f-822e-1a2b41a2134d" valueTypeId="6ab88a18-7d02-46df-bfe5-3f708327b4d9"/>
+    <managerType typeId="74394701-af12-4a24-89be-1b24dbcfe497" valueTypeId="dd74d100-2bf3-44f8-b95c-f6e61ac85125"/>
+  </producedTypes>
+  <name>ОплатаПоставщикам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оплата поставщикам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ОплатаПоставщикам.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="c4eb59e5-71ba-420e-bc66-b11c21113f24">
+    <name>Поставщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поставщик</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b8f68c76-70e9-4bf6-81c8-1697f25bed4d">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>
