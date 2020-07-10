@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e161d1f2-428f-48c0-841d-970a49537e64">
+  <name>ЦеныТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цены товаров</value>
+  </synonym>
+  <rootURL>prices</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="22cc002d-a7d0-4be2-b201-e1c396238f69">
+    <name>ПолучитьЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить цены</value>
+    </synonym>
+    <template>/date/{Дата}</template>
+    <methods uuid="a255282a-260c-48cb-b5cb-d046078aa8b9">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>ПолучитьЦеныGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="357e1101-c9bb-4a1a-a72c-79ad37842be8">
+    <name>ПоказатьЦенуТовара</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показать цену товара</value>
+    </synonym>
+    <template>/product/{Код}</template>
+    <methods uuid="06ca9c8d-3681-41d3-9bb2-cdcc436f07e3">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>ПоказатьЦенуТовараGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="d03d7515-9a23-4201-960c-26269a1dc8f7">
+    <name>ПроиндексироватьЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проиндексировать цены</value>
+    </synonym>
+    <template>/percent/{Процент}</template>
+    <methods uuid="1b2c0a1f-9ac0-46e3-9236-31cfcecea513">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>ПроиндексироватьЦеныPOST</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

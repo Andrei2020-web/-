@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a84a67ac-3260-4d33-a33f-97379fe6c35d">
+  <name>Сотрудники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сотрудники</value>
+  </synonym>
+  <rootURL>employees</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="0e1c4cc1-dcad-4d3a-99a9-3e7c89725a31">
+    <name>Список</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список</value>
+    </synonym>
+    <template>/*</template>
+    <methods uuid="ab602c2c-4892-4118-a0d1-5aa1a125487f">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>СписокGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="4ed7a8b2-7c87-4f65-97fa-4a05e244ceb1">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <template>/code/{Код}</template>
+    <methods uuid="490b34ce-bf53-41c1-b4aa-b037cfb264ad">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>СотрудникGET</handler>
+    </methods>
+    <methods uuid="f2907eca-3a98-42e0-b883-885231e55d7e">
+      <name>DELETE</name>
+      <synonym>
+        <key>ru</key>
+        <value>DELETE</value>
+      </synonym>
+      <httpMethod>DELETE</httpMethod>
+      <handler>СотрудникDELETE</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

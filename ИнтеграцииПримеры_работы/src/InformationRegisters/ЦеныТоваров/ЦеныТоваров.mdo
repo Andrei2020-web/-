@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0b95c056-bb1f-4546-b139-d68cdc58cf12">
+  <producedTypes>
+    <selectionType typeId="08cf8bdc-8dcd-48f5-8ac3-3ffbda4efe8b" valueTypeId="24e930cc-360d-4ec5-a676-8ed30e0703fd"/>
+    <listType typeId="14131701-c537-4dae-813c-5bab3d23e25c" valueTypeId="628523d7-e634-4341-8ce3-65c1c4f7cd38"/>
+    <managerType typeId="f7ddaa44-b723-4017-a9f8-e018f0bfa982" valueTypeId="96b1fe44-cb23-460c-ac10-22d469546498"/>
+    <recordSetType typeId="4ffe8f7d-35ee-4063-9d25-fd89b13b3878" valueTypeId="8ad2b1dc-63b3-4a35-a72f-6410315ba28c"/>
+    <recordKeyType typeId="457fc86d-f27d-4a97-9fd3-40dc3225d6ef" valueTypeId="75bb7d6a-d030-4015-b476-74d6fb2bea5e"/>
+    <recordType typeId="30b73da2-14f1-4f0d-a760-1842f394a403" valueTypeId="c26df610-5a2e-4e95-b4fc-68b8838908cb"/>
+    <recordManagerType typeId="e339f433-5403-4bdb-8cbd-6d7c21a883eb" valueTypeId="d8a4db21-9764-4060-b594-f7a91efda6ee"/>
+  </producedTypes>
+  <name>ЦеныТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цены товаров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="ec7d2b5b-59a5-40ef-af52-69e878cd0d66">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </resources>
+  <dimensions uuid="3659425b-1853-41cc-b73b-57c602538a36">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Товары</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

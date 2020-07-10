@@ -26,7 +26,14 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.JSON</subsystems>
+  <httpServices>HTTPService.Сотрудники</httpServices>
+  <httpServices>HTTPService.ЦеныТоваров</httpServices>
   <catalogs>Catalog.Сотрудники</catalogs>
+  <catalogs>Catalog.Товары</catalogs>
+  <catalogs>Catalog.Должности</catalogs>
+  <catalogs>Catalog.Поставщики</catalogs>
   <documents>Document.ОплатаПоставщикам</documents>
+  <documents>Document.ПоступлениеТоваров</documents>
   <dataProcessors>DataProcessor.ПотоковаяЗаписьНаСервере</dataProcessors>
+  <informationRegisters>InformationRegister.ЦеныТоваров</informationRegisters>
 </mdclass:Configuration>
