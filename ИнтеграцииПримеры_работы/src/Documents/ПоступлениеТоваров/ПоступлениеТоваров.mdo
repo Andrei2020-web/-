@@ -25,4 +25,43 @@
   <autonumbering>true</autonumbering>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <tabularSections uuid="62d4475a-342b-4fbe-938c-f91625323e9e">
+    <producedTypes>
+      <objectType typeId="5ed58827-1c6f-40dc-95d3-e18c18c89bc8" valueTypeId="f8f0edd8-2c93-42b7-bb69-ec37f7db38b4"/>
+      <rowType typeId="df086648-f122-480d-ae45-836d86ff83e0" valueTypeId="a52c59e8-e7f4-439b-9420-47155fe3579c"/>
+    </producedTypes>
+    <name>Товары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товары</value>
+    </synonym>
+    <attributes uuid="37541556-c23f-4059-97f6-2ac12aef9afa">
+      <name>Товар</name>
+      <synonym>
+        <key>ru</key>
+        <value>Товар</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Товары</types>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="148eb312-99cf-4d09-a024-2ed9904f5018">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
 </mdclass:Document>
