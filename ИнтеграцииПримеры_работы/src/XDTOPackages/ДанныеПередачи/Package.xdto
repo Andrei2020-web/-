@@ -1,0 +1,13 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://localhost/REST">
+	<objectType name="Товар">
+		<property name="Наименование" type="xs:string"/>
+	</objectType>
+	<objectType name="Клиент">
+		<property name="Наименование" type="xs:string"/>
+	</objectType>
+	<objectType name="СтрокаЗаказа">
+		<property xmlns:d3p1="http://localhost/REST" name="Товар" type="d3p1:Товар"/>
+		<property name="Количество" type="xs:int"/>
+		<property name="Цена" type="xs:int"/>
+	</objectType>
+</package>
